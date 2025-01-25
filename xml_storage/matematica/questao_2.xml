@@ -1,0 +1,101 @@
+<question>
+    <enunciado>
+        <![CDATA[
+            <div style="text-align: justify;">
+                (MTENEM22) Em uma região de florestas está sendo construído um polo industrial. Um cientista estimou que, se nenhuma atitude de preservação for implantada para preservação dos micos dourados existentes nessa região, a quantidade desse animal irá diminuir segundo a lei:
+                <br /><br />
+                <span class="katex">
+                    <span class="katex-mathml">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <semantics>
+                                <mrow>
+                                    <mi>N</mi>
+                                    <mo>(</mo>
+                                    <mi>t</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <msub>
+                                        <mi>N</mi>
+                                        <mn>0</mn>
+                                    </msub>
+                                    <mo>⋅</mo>
+                                    <msup>
+                                        <mn>5</mn>
+                                        <mrow>
+                                            <mo>−</mo>
+                                            <mfrac>
+                                                <mi>t</mi>
+                                                <mn>4</mn>
+                                            </mfrac>
+                                        </mrow>
+                                    </msup>
+                                </mrow>
+                            </semantics>
+                        </math>
+                    </span>
+                    
+                </span>
+                <br /><br />
+                Em que 
+                <span class="katex">
+                    <span class="katex-mathml">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <semantics>
+                                <mrow>
+                                    <msub>
+                                        <mi>N</mi>
+                                        <mn>0</mn>
+                                    </msub>
+                                    
+                                </mrow>
+                            </semantics>
+                        </math>
+                    </span>
+                    
+                </span>
+                 é a quantidade de micos dourados antes da construção desse polo industrial e 
+                 <span class="katex">
+                    <span class="katex-mathml">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <semantics>
+                                <mrow>
+                                    <mi>N</mi>
+                                    <mo>(</mo>
+                                    <mi>t</mi>
+                                    <mo>)</mo>
+                                </mrow>
+                            </semantics>
+                        </math>
+                    </span>
+                    
+                </span>
+                 a quantidade de micos dourados 
+                 ( 
+                                 
+                 <span class="katex">
+                    <span class="katex-mathml">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <semantics>
+                                <mrow>
+                                    <mi>t</mi>
+                                </mrow>
+                            </semantics>
+                        </math>
+                    </span>
+                    
+                </span>
+                 ) anos após o início da construção desse polo industrial.
+            </div>
+        ]]>
+    </enunciado>
+    <comando>
+        <![CDATA[
+            Considerando que nenhuma atitude de preservação seja implantada, qual é o tempo necessário, desde o início das construções, para que o número de micos dourados existentes nessa região se reduza a metade da população inicial?
+        ]]>
+    </comando>
+    <alternativa correta="false">2 anos.</alternativa>
+    <alternativa correta="false">4 anos.</alternativa>
+    <alternativa correta="true">8 anos.</alternativa>
+    <alternativa correta="false">16 anos.</alternativa>
+    <alternativa correta="false">20 anos.</alternativa>
+</question>

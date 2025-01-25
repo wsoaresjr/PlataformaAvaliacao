@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instruções</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f7fc;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            background: #fff;
+            max-width: 600px;
+            padding: 20px 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .container h2 {
+            color: #4CAF50;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .instructions {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+        .instructions p {
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .start-button {
+            padding: 12px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background: #4CAF50;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .start-button:hover {
+            background: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Instruções para a Avaliação de {{ disciplina }}</h2>
+        <div class="instructions">
+            <p>1. Você terá 2 horas para concluir a avaliação.</p>
+            <p>2. Responda a todas as questões. Apenas uma alternativa correta é permitida por questão.</p>
+            <p>3. A avaliação será encerrada automaticamente quando o tempo acabar.</p>
+        </div>
+        <a href="{% url 'avaliacao' disciplina %}" class="start-button">Iniciar</a>
+    </div>
+</body>
+</html>

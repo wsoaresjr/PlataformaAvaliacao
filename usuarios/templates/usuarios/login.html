@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  {% load static %}
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <style>
+    body {
+      background: url("{% static 'usuarios/background.png' %}") no-repeat center center fixed;
+      background-size: cover;
+      font-family: 'Roboto', sans-serif;
+    }
+    .container {
+      margin-top: 50px;
+    }
+    #loginbox {
+      margin-top: 50px;
+    }
+    .panel {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    }
+    .panel-heading {
+      background-color: #17a2b8 !important;
+      color: white !important;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+      padding: 10px 15px;
+    }
+    .panel-title {
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px auto;
+      max-width: 250px; /* Alterado para 250px */
+    }
+    .btn-success {
+      background-color: #28a745;
+      border-color: #28a745;
+      width: 100%;
+    }
+    .btn-success:hover {
+      background-color: #218838;
+      border-color: #1e7e34;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="loginbox" class="mainbox col-md-6 col-md-offset-3 col-sm-8 col-sm-offset-2">
+      <img src="{% static 'usuarios/logoADE.png' %}" alt="Logomarca" class="logo">
+      <div class="panel panel-info">
+        <div class="panel-heading">
+          <div class="panel-title">Acesso à Plataforma</div>
+        </div>
+        <div class="panel-body">
+          {% if messages %}
+          <div class="alert alert-danger">
+            {% for message in messages %}
+              {{ message }}
+            {% endfor %}
+          </div>
+          {% endif %}
+          <form id="loginform" class="form-horizontal" method="post">
+            {% csrf_token %}
+            <div class="input-group" style="margin-bottom: 25px">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+              <input id="login-username" type="text" class="form-control" name="username" placeholder="Usuário" required>
+            </div>
+            <div class="input-group" style="margin-bottom: 25px">
+              <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+              <input id="login-password" type="password" class="form-control" name="password" placeholder="Senha" required>
+            </div>
+            <div style="margin-top: 10px" class="form-group">
+              <div class="col-sm-12 controls">
+                <button type="submit" class="btn btn-success">Entrar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
+

@@ -1,0 +1,19 @@
+<question>
+    <enunciado>
+        <![CDATA[
+            <div style="text-align: justify;">
+                (MTENEM36) Duas estruturas triangulares foram usadas como molde para a fabricação de treliças, que são peças usadas na construção civil. O responsável por essa fabricação usou, inicialmente, um molde triangular cujo comprimento do maior lado é 13 cm e, cujo perímetro, é 30 cm. Em seguida, usou um molde triangular em que o comprimento de cada um dos seus lados tem medida proporcional aos comprimentos dos lados do primeiro molde usado, sendo a razão de proporcionalidade, a mesma para cada lado. Além disso, ele verificou que o perímetro do segundo molde tem medida 45 cm.
+            </div>
+        ]]>
+    </enunciado>
+    <comando>
+        <![CDATA[
+            Qual é o comprimento do maior lado do segundo molde triangular que foi usado?
+        ]]>
+    </comando>
+    <alternativa correta="false">13,65 cm.</alternativa>
+    <alternativa correta="false">14,50 cm.</alternativa>
+    <alternativa correta="true">19,50 cm.</alternativa>
+    <alternativa correta="false">28,00 cm.</alternativa>
+    <alternativa correta="false">45,00 cm.</alternativa>
+</question>

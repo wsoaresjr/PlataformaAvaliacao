@@ -1,0 +1,48 @@
+<question>
+    <enunciado>
+        <![CDATA[
+            <div style="text-align: justify;">
+                (MTENEM23) Para entregar seus produtos, uma fábrica de cerâmicas usa o serviço de uma transportadora. O lucro dessa fábrica está relacionado ao número de x peças que podem ser levadas por essa transportadora em uma única entrega e é dado pela expressão:
+                <br /><br />
+                <span class="katex">
+                    <span class="katex-mathml">
+                        <math xmlns="http://www.w3.org/1998/Math/MathML">
+                            <semantics>
+                                <mrow>
+                                    <mi>L</mi>
+                                    <mo>(</mo>
+                                    <mi>x</mi>
+                                    <mo>)</mo>
+                                    <mo>=</mo>
+                                    <mo>−</mo>
+                                    <msup>
+                                        <mi>x</mi>
+                                        <mn>2</mn>
+                                    </msup>
+                                    <mo>+</mo>
+                                    <mn>16</mn>
+                                    <mi>x</mi>
+                                    <mo>−</mo>
+                                    <mn>28</mn>
+                                </mrow>
+                                <annotation encoding="application/x-tex">
+                                    L(x) = -x^2 + 16x - 28
+                                </annotation>
+                            </semantics>
+                        </math>
+                    </span>
+                </span>
+            </div>
+        ]]>
+    </enunciado>
+    <comando>
+        <![CDATA[
+            De forma a obter o lucro máximo, quantas peças de cerâmica podem ser levadas por essa transportadora em uma única entrega?
+        ]]>
+    </comando>
+    <alternativa correta="false">4</alternativa>
+    <alternativa correta="true">8</alternativa>
+    <alternativa correta="false">14</alternativa>
+    <alternativa correta="false">36</alternativa>
+    <alternativa correta="false">72</alternativa>
+</question>

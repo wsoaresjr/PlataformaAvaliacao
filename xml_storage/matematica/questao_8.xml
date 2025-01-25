@@ -1,0 +1,19 @@
+<question>
+    <enunciado>
+        <![CDATA[
+            <div style="text-align: justify;">
+                (MTENEM43) Um paciente recebeu durante uma consulta a prescrição para tomar um medicamento em comprimidos contendo 1,5 mg do princípio ativo. Ao procurar o medicamento nas farmácias do bairro, esse paciente o encontrou apenas no formato em gotas, cuja concentração do princípio ativo é de 2,5 mg/mL. O farmacêutico disse ao paciente que ele poderia tomar o medicamento em gotas, desde que respeitasse a dosagem do princípio ativo indicada pelo médico, calculando a quantidade de gotas a partir da informação de que 1 mL corresponde a 20 gotas.
+            </div>
+        ]]>
+    </enunciado>
+    <comando>
+        <![CDATA[
+            Quantas gotas do medicamento devem ser tomadas pelo paciente para que o princípio ativo seja ingerido na mesma quantidade contida em um comprimido?
+        ]]>
+    </comando>
+    <alternativa correta="false">4</alternativa>
+    <alternativa correta="false">10</alternativa>
+    <alternativa correta="true">12</alternativa> 
+    <alternativa correta="false">19</alternativa>
+    <alternativa correta="false">30</alternativa>
+</question>

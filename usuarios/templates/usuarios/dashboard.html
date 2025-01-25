@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Administrador</title>
+  {% load static %}
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7fc;
+      display: flex;
+      height: 100vh;
+    }
+    .sidebar {
+      width: 250px;
+      background: #4CAF50;
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .sidebar h2 {
+      font-size: 22px;
+      margin-bottom: 20px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin-bottom: 10px;
+    }
+    .sidebar ul li a {
+      text-decoration: none;
+      color: white;
+      padding: 10px 15px;
+      display: block;
+      border-radius: 5px;
+      transition: background 0.3s ease;
+    }
+    .sidebar ul li a:hover {
+      background: #45a049;
+    }
+    .logout {
+      text-align: center;
+    }
+    .logout a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      border: 1px solid white;
+      padding: 8px 20px;
+      border-radius: 5px;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .logout a:hover {
+      background: white;
+      color: #4CAF50;
+    }
+    .content {
+      flex: 1;
+      padding: 40px;
+      overflow-y: auto;
+    }
+    .content h1 {
+      font-size: 28px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+    .content p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <div>
+      <h2>Bem-vindo, {{ request.session.user_name }}</h2>
+      <ul>
+        <li><a href="{% url 'resultados' %}">Resultados das Avaliações</a></li>
+        <li><a href="{% url 'cadastrar_usuario' %}">Gerenciar Usuários</a></li>
+        <!-- Adicione outros links relevantes aqui -->
+      </ul>
+    </div>
+    <div class="logout">
+      <a href="{% url 'logout' %}">Sair</a>
+    </div>
+  </div>
+  <div class="content">
+    <h1>Dashboard do Administrador</h1>
+    <p>Use a barra lateral para acessar as funcionalidades da plataforma.</p>
+  </div>
+</body>
+</html>
