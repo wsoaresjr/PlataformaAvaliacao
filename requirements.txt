@@ -1,0 +1,15 @@
+# Django: framework web
+Django>=3.2,<4.0
+
+# Gunicorn: servidor WSGI para produção
+gunicorn>=20.0.0
+
+# Caso você esteja integrando Dash à sua aplicação Django,
+# por exemplo, utilizando django-plotly-dash, descomente ou inclua a linha abaixo
+# django-plotly-dash>=1.7.0
+
+# Pandas: caso você esteja utilizando para manipulação de CSVs ou outros dados
+pandas>=1.2.0
+
+# Plotly: se sua aplicação utilizar componentes interativos do Dash
+plotly>=5.0.0
